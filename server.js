@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // Allow requests from this origin
+    origin: 'https://eventmanagementfrontend-mocha.vercel.app', // Allow requests from this origin
     methods: ['GET', 'POST','PUT','DELETE'], // Allowed methods
     credentials: true, // Allow cookies and credentials
 };
