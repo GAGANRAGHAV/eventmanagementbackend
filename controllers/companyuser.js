@@ -30,7 +30,7 @@ export const loginCompany = async (req, res) => {
   const { email, password } = req.body; // Expect `email` in the request body
   try {
     const user = await Company.findOne({ email }); // Query by email
-    console.log("User:", user);
+    // console.log("User:", user);
 
     if (!user) {
       return res.status(400).send("Invalid Credentials");

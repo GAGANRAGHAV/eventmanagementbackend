@@ -68,8 +68,8 @@ export const addParticipant = async (req, res) => {
   const { id: projectId } = req.params; // Match the parameter name in the route
   const { userId } = req.body;
 
-  console.log("Project ID:", projectId);
-  console.log("User ID:", userId);
+  // console.log("Project ID:", projectId);
+  // console.log("User ID:", userId);
 
   if (!userId) {
     return res.status(400).json({ message: "User ID is required." });
